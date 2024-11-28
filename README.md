@@ -39,16 +39,19 @@ Performance Metrics
 The models were evaluated using:
 
 Mean Absolute Error (MAE): Average error magnitude.
+
 Mean Squared Error (MSE): Penalizes larger errors more heavily.
-R-squared:
-Proportion of variance explained by the model.
+
+R-squared: Proportion of variance explained by the model.
 
 Key Steps
+
 Data Preprocessing:
 
 Merged datasets on zip code to combine location and house-specific features.
 Handled missing values, duplicate rows, and inconsistent data types.
 Normalized numerical features using StandardScaler.
+
 Feature Selection:
 
 Selected key features influencing house prices:
@@ -57,15 +60,18 @@ Number of bathrooms (bath)
 Lot size in acres (acre_lot)
 House size (house_size)
 Added zip code as a categorical feature using one-hot encoding.
+
 Model Training and Evaluation:
 
 Split data into training and test sets (80/20 split).
 Trained models and evaluated using performance metrics.
+
 Results
 Random Forest achieved the best performance
 Decision Tree and Linear Regression also provided insights but were outperformed by Random Forest.
 
 Technologies Used
+
 Python:
 Libraries: pandas, scikit-learn, numpy, matplotlib.
 Machine Learning Models:
